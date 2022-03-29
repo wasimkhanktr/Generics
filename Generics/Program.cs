@@ -10,12 +10,9 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            Maximum<int> maximum = new Maximum<int>();
-            int max = maximum.FindMax(1, 2, 3);
-            Maximum<string> maximum1 = new Maximum<string>();
-            string max1 = maximum1.FindMax("Apple", "Banana", "Peach");
+            Maximum maximum = new Maximum();
+            int max = maximum.FindMax(3, 2, 1);
             Console.WriteLine(max);
-            Console.WriteLine(max1);
         }
     }
 }

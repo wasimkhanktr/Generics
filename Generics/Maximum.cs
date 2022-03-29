@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class Maximum<T>
+    internal class Maximum
     {
-        public T FindMax(T a, T b, T c)
+        public int FindMax(int a, int b, int c)
         {
-            if (Comparer<T>.Default.Compare(a, b) > 0 && Comparer<T>.Default.Compare(a, c) > 0)
+            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
                 return a;
-            else if (Comparer<T>.Default.Compare(b, c) > 0 && Comparer<T>.Default.Compare(b, c) > 0)
+            else if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
                 return b;
             else
                 return c;
         }
-
     }
 }
