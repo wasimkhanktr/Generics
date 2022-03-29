@@ -11,7 +11,7 @@ namespace Generics
         static void Main(string[] args)
         {
             Maximum maximum = new Maximum();
-            int max = maximum.FindMax(2, 1, 3);
+            double max = maximum.FindMaxDouble(2.1, 1.3, 3.6);
             Console.WriteLine(max);
         }
     }
